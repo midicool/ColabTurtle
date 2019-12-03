@@ -304,11 +304,12 @@ def color2(ther,theg,theb):
 
 def circle(rad):
   r2=rad*rad
-  xx=getx()
-  yy=gety()
+  xcenter=getx()
+  ycenter=gety()
   for x in range(-rad,rad,4):
     y = int(math.sqrt((r2 - x*x)) + 0.5)
-    _moveToNewPosition((x+xx, y+yy))
+    _moveToNewPosition((xcenter+x, ycenter+y))
+    _moveToNewPosition((xcenter+x, ycenter-y))
   _moveToNewPosition((xx,yy))
       
 
