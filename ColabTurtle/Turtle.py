@@ -309,7 +309,7 @@ def circle(rad):
   for x in range(-rad,rad,4):
     y = int(math.sqrt((r2 - x*x)) + 0.5)
     _moveToNewPosition((xcenter+x, ycenter+y))
-  for x in range(rad,-rad,4):
+  for x in range(-rad,rad,4):
     y = int(math.sqrt((r2 - x*x)) + 0.5)
     _moveToNewPosition((xcenter+x, ycenter-y))
   _moveToNewPosition((xcenter,ycenter))
