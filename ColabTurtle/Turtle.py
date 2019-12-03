@@ -302,6 +302,13 @@ def color2(ther,theg,theb):
     _updateDrawing()
 
 
+def circle(rad):
+  r2=rad*rad
+  for x in range(-rad,rad):
+    y = math.sqrt((r2 - x*x) + 0.5)
+    _moveToNewPosition(x,y)
+      
+
 # change the width of the lines drawn by the turtle, in pixels
 def width(width):
     global pen_width
