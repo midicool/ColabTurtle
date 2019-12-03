@@ -273,7 +273,7 @@ def bgcolor(color):
     background_color = color
     _updateDrawing()
 
-def bgcolor2(color):
+def bgcolor2(ther,theg,theb):
     global background_color
 
     color = '#%02x%02x%02x' % (ther, theg, theb)
