@@ -306,7 +306,7 @@ def circle(rad):
   r2=rad*rad
   for x in range(-rad,rad):
     y = math.sqrt((r2 - x*x) + 0.5)
-    _moveToNewPosition(x,y)
+    _moveToNewPosition((x, y))
       
 
 # change the width of the lines drawn by the turtle, in pixels
