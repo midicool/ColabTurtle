@@ -273,6 +273,14 @@ def bgcolor(color):
     background_color = color
     _updateDrawing()
 
+def bgcolor2(color):
+    global background_color
+
+    color = '#%02x%02x%02x' % (ther, theg, theb)
+
+    background_color = color
+    _updateDrawing()
+
 
 # change the color of the pen; valid colors are defined at VALID_COLORS
 def color(color):
@@ -280,6 +288,16 @@ def color(color):
 
     #if not color in VALID_COLORS:
     #    raise ValueError('color value should be one of the following: ' + str(VALID_COLORS))
+    pen_color = color
+    _updateDrawing()
+
+
+# change the color of the pen; valid colors are defined at VALID_COLORS
+def color2(ther,theg,theb):
+    global pen_color
+
+    color = '#%02x%02x%02x' % (ther, theg, theb)
+  
     pen_color = color
     _updateDrawing()
 
