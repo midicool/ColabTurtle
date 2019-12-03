@@ -321,7 +321,9 @@ def circle(rad):
     _moveToNewPosition((xcenter+x, ycenter-y))
   _moveToNewPosition((xcenter+rad, ycenter+0.5))
 
+  penup()
   _moveToNewPosition((xcenter,ycenter))
+  pendown()
       
 
 # change the width of the lines drawn by the turtle, in pixels
