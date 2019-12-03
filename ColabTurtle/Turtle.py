@@ -305,7 +305,7 @@ def color2(ther,theg,theb):
 def circle(rad):
   r2=rad*rad
   for x in range(-rad,rad):
-    y = math.sqrt((r2 - x*x) + 0.5)
+    y = int(math.sqrt((r2 - x*x) + 0.5))
     _moveToNewPosition((x, y))
       
 
